@@ -41,7 +41,7 @@ CLK : in std_logic
 end leder;
 
 architecture Behavioral of leder is
-signal counter : std_logic_vector(30 downto 0) := (others=>'0');
+signal counter : std_logic_vector(31 downto 0) := (others=>'0');
 signal led_sgn : std_logic_vector(7 downto 0):= x"ff";
 signal dutycnt : std_logic_vector(7 downto 0):= x"00";
 signal duty_sgn : std_logic_vector(31 downto 0)  := (others=>'0');
